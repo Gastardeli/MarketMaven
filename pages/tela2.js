@@ -1,6 +1,11 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Platform, StatusBar, ScrollView, ActivityIndicator, Alert, Keyboard, Image } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { useState } from "react";
+import React, { useState } from 'react';
+
+
+
+
+
 
 const alturaStatusBar = StatusBar.currentHeight;
 
@@ -144,6 +149,7 @@ const ESTILOS = StyleSheet.create({
     justifyContent: 'space-between',
     padding: 6,
     backgroundColor: '#295135',
+    paddingTop: 20,
   },
   logo1: {
     width: 50,

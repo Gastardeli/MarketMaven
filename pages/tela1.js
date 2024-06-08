@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
-import { View, Text, Image, ScrollView, StyleSheet, TouchableOpacity, FlatList } from 'react-native';
+import React, {  StyleSheet, View, TextInput, Text, Image, ScrollView, TouchableOpacity, FlatList } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { StatusBar } from 'expo-status-bar';
+import  { useState } from 'react';
+
+
 
 const produtos = [
   { id: '1', nome: 'Morango', preco: 'R$ 00,00', imagem: require('./imagens/morango.png') },
@@ -14,7 +17,7 @@ const produtos = [
   { id: '9', nome: 'Batata', preco: 'R$ 00,00', imagem: require('./imagens/batata.png') },
   { id: '10', nome: 'Beterraba', preco: 'R$ 00,00', imagem: require('./imagens/beterraba.png') },
   { id: '11', nome: 'Cenoura', preco: 'R$ 00,00', imagem: require('./imagens/cenoura.png') },
-  { id: '11', nome: 'Mandioca', preco: 'R$ 00,00', imagem: require('./imagens/mandioca.png') },
+  { id: '12', nome: 'Mandioca', preco: 'R$ 00,00', imagem: require('./imagens/mandioca.png') },
 ];
 
 const categorias = [
@@ -120,6 +123,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
+    paddingTop: 20,
     
   },
   logo: {

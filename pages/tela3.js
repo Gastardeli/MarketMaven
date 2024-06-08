@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
-import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
+
+
+
+import {TouchableOpacity, Image, ScrollView } from 'react-native';
 
 const CarrinhoDeCompras = () => {
   const [quantidadeAlface, setQuantidadeAlface] = useState(1);
@@ -292,6 +297,7 @@ const styles = StyleSheet.create({
     justifyContent:'space-between',
     padding: 6,
     backgroundColor: '#5A6650',
+    paddingTop: 20,
   },
   logo1: {
     width: 50,
@@ -310,6 +316,7 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: '#fff',
     alignItems: 'center',
+    
   },
   headerText: {
     fontSize: 18,
